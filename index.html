@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FCI Advisory | X-energy Workplace Strategy</title>
+<style>
+:root{
+  --maroon:#C23764;--blue:#1E2671;--navy:#0B1020;--ink:#101828;--body:#475467;--muted:#667085;--line:#E4E7EC;--soft:#F8FAFC;--white:#fff;
+  --w:1280px;--h:720px;
+}
+*{box-sizing:border-box} html,body{margin:0;height:100%;font-family:Inter,Arial,Helvetica,sans-serif;background:#0B0B13;color:var(--ink)}
+.deck{height:100%;display:grid;place-items:center;padding:24px;position:relative;overflow:hidden}
+.slide{display:none;width:min(94vw,var(--w));height:min(52.875vw,var(--h));max-height:88vh;aspect-ratio:16/9;background:#fff;border-radius:22px;box-shadow:0 26px 90px rgba(0,0,0,.42);position:relative;overflow:hidden}.slide.active{display:block}
+.slide-inner{height:100%;padding:138px 78px 64px;position:relative;z-index:2}.slide-inner.compact{padding-top:122px}.slide-inner.centered{display:flex;flex-direction:column;justify-content:center;padding-top:118px}
+.dark{background:radial-gradient(circle at 76% 10%,rgba(194,55,100,.34),transparent 33%),linear-gradient(135deg,#07070B 0%,#11172C 54%,#1E2671 100%);color:#fff}.dark:after{content:"";position:absolute;inset:0;background-image:linear-gradient(135deg,rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(45deg,rgba(194,55,100,.12),transparent 42%);background-size:72px 72px,100% 100%;opacity:.55;z-index:0}
+.header{position:absolute;left:64px;right:64px;top:40px;height:48px;display:flex;align-items:center;justify-content:space-between;z-index:5}.brand-pair{display:flex;align-items:center;gap:18px}.logo-card{height:40px;min-width:154px;background:#fff;border:1px solid rgba(16,24,40,.08);border-radius:10px;padding:8px 12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,24,40,.04)}.logo-card img{display:block;max-height:25px;max-width:152px}.logo-card.x img{max-height:22px;max-width:154px}.dark .logo-card{border-color:rgba(255,255,255,.14);box-shadow:0 8px 24px rgba(0,0,0,.18)}.partner-mark{font-size:18px;color:#98A2B3;font-weight:800}.dark .partner-mark{color:rgba(255,255,255,.54)}
+.slide-num{position:absolute;right:42px;bottom:28px;font-size:11px;font-weight:850;letter-spacing:.14em;color:#98A2B3;z-index:6;background:rgba(255,255,255,.78);padding:4px 7px;border-radius:8px}.dark .slide-num{background:rgba(8,10,18,.18);color:rgba(255,255,255,.78)}.accent{position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(180deg,var(--maroon),var(--blue));z-index:4}
+h1{font-size:58px;line-height:1.02;margin:0 0 24px;letter-spacing:-2.3px;max-width:960px}h2{font-size:43px;line-height:1.06;margin:0 0 20px;letter-spacing:-1.6px;max-width:900px}h3{font-size:22px;line-height:1.18;margin:0 0 10px;letter-spacing:-.4px}.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.2em;font-weight:850;color:var(--maroon);margin-bottom:20px}.dark .eyebrow{color:rgba(255,255,255,.74)}.lead{font-size:24px;line-height:1.36;color:#344054;max-width:890px;margin:0}.dark .lead{color:rgba(255,255,255,.84)}.muted{color:#98A2B3}.bigline{width:74px;height:5px;background:var(--maroon);border-radius:99px;margin:32px 0}
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.four{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{border:1px solid var(--line);border-radius:18px;padding:24px 24px 22px;background:#fff;min-height:150px}.card strong{display:block;font-size:18px;margin-bottom:10px;color:var(--ink)}.card p{font-size:16px;line-height:1.44;margin:0;color:#5B6472}.statement{background:linear-gradient(135deg,#F9FAFB,#fff);border:1px solid var(--line);border-radius:24px;padding:34px}.statement p{font-size:26px;line-height:1.32;margin:0;color:#263142;font-weight:700}
+/* FCI intro */
+.fci-intro{display:grid;grid-template-columns:1.06fr .94fr;gap:32px;align-items:stretch;margin-top:24px}.intro-block{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px}.intro-block h3{font-size:22px}.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}.cap{background:#F8FAFC;border:1px solid var(--line);border-radius:16px;padding:14px}.cap b{display:block;color:var(--ink);font-size:16px;margin-bottom:8px}.cap span{display:block;color:#5B6472;font-size:14px;line-height:1.35}.cred-strip{margin-top:18px;border-top:1px solid var(--line);padding-top:14px;padding-right:62px;color:#475467;font-size:14px;line-height:1.38}.right-panel{background:linear-gradient(135deg,rgba(194,55,100,.09),rgba(30,38,113,.09));border:1px solid var(--line);border-radius:22px;padding:24px}.right-panel .mini{border-left:4px solid var(--maroon);padding-left:14px;margin-top:14px}.right-panel .mini strong{display:block;font-size:16px;margin-bottom:5px}.right-panel .mini p{font-size:14px;color:#4B5563;line-height:1.34;margin:0}
+/* Phase slide */
+.phase-title{max-width:980px}.phase-sub{font-size:21px;color:#475467;line-height:1.4;max-width:840px;margin:0}.phase-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:34px}.phase{border:1px solid #DDE2EC;border-radius:20px;background:#fff;padding:26px 22px 24px;min-height:255px;box-shadow:0 14px 30px rgba(16,24,40,.035);position:relative}.phase-icon{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--maroon),var(--blue));display:grid;place-items:center;margin-bottom:22px;color:#fff}.phase-icon svg{width:38px;height:38px;stroke:currentColor;fill:none;stroke-width:2.2}.phase .num{display:inline-block;color:var(--maroon);font-size:28px;font-weight:850;margin-right:10px}.phase h3{display:inline-block;font-size:23px;margin:0 0 14px}.phase-line{width:42px;height:4px;background:var(--maroon);border-radius:99px;margin-bottom:18px}.phase p{font-size:15.5px;line-height:1.45;color:#475467;margin:0}.outcome{display:flex;align-items:center;gap:20px;border-top:1px solid var(--line);margin-top:28px;padding-top:18px;color:#344054}.target{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--maroon);font-size:24px}.outcome p{margin:0;font-size:16.5px}.outcome b{color:#111827}
+.pill-list{display:grid;gap:14px}.pill{display:flex;align-items:flex-start;gap:14px;background:#F8FAFC;border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:18px;font-weight:760;color:#253047}.pill span{width:9px;height:9px;background:var(--maroon);border-radius:50%;margin-top:8px;flex:0 0 auto}
+.workflow-map{height:392px;border-radius:28px;background:radial-gradient(circle at 50% 48%,rgba(194,55,100,.08),transparent 28%),linear-gradient(135deg,#F7F8FC,#fff);border:1px solid var(--line);position:relative;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.75);padding:0}
+.workflow-lines{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}.workflow-lines path{stroke:#D7DBE6;stroke-width:2;fill:none;stroke-linecap:round}.workflow-lines circle{fill:#D7DBE6}.wf-node{position:absolute;z-index:3;display:flex;align-items:center;gap:9px;border-radius:999px;background:#fff;border:1px solid #D7DBE6;box-shadow:0 14px 34px rgba(30,38,113,.10);padding:10px 14px;font-weight:850;color:#111827;font-size:16.5px;white-space:nowrap;max-width:255px}.wf-icon{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#F4F6FB;color:var(--maroon);font-size:15px;line-height:1;flex:0 0 auto}.wf-node.center{left:50%;top:52%;transform:translate(-50%,-50%);background:linear-gradient(135deg,var(--maroon),var(--blue));color:#fff;border:0;font-size:20px;padding:16px 24px;box-shadow:0 18px 46px rgba(30,38,113,.22);max-width:none}.wf-node.center .wf-icon{background:rgba(255,255,255,.18);color:#fff}.wf-node.a{left:44px;top:102px}.wf-node.b{right:44px;top:104px}.wf-node.c{left:44px;bottom:78px}.wf-node.d{right:44px;bottom:80px}.wf-node.e{left:50%;top:38px;transform:translateX(-50%)}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:32px;border:1px solid var(--line);border-radius:18px;overflow:hidden}.mile{padding:24px 18px;background:#fff;border-right:1px solid var(--line);min-height:170px}.mile:last-child{border-right:0}.mile .label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--maroon);font-weight:850;margin-bottom:12px}.mile strong{font-size:18px}.mile p{font-size:14px;line-height:1.4;color:#5B6472;margin:10px 0 0}.questions{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}.q{border-left:5px solid var(--maroon);background:#fff;border-radius:14px;padding:20px 22px;color:#243044;font-size:20px;font-weight:780;box-shadow:0 10px 28px rgba(0,0,0,.08)}.footer-note{position:absolute;left:76px;bottom:42px;color:#98A2B3;font-size:13px}
+.controls{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}.controls button{border:0;background:#fff;color:#111827;border-radius:999px;padding:10px 14px;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.22);cursor:pointer}.notes-panel{position:fixed;right:22px;top:22px;bottom:22px;width:400px;background:#fff;border-radius:18px;box-shadow:0 24px 80px rgba(0,0,0,.34);z-index:20;padding:22px;display:none;overflow:auto}.notes-panel.show{display:block}.notes-panel h3{margin:0 0 12px;color:var(--maroon)}.notes-panel pre{white-space:pre-wrap;font:15px/1.48 Arial;color:#263142;margin:0}.hide-notes{position:absolute;right:14px;top:12px;border:0;background:#F2F4F7;border-radius:9px;padding:7px 10px;font-weight:800;cursor:pointer}
+@media(max-width:900px){.slide-inner{padding:108px 42px 52px}.header{left:28px;right:28px}.two,.three,.four,.phase-cards,.fci-intro,.timeline,.questions{grid-template-columns:1fr}.slide{height:auto;min-height:88vh}.node-map{display:none}h1{font-size:42px}h2{font-size:34px}.lead{font-size:20px}.notes-panel{width:calc(100vw - 36px)}}
+@media print{html,body{background:#fff}.deck{display:block;height:auto;padding:0}.slide{display:block;width:11in;height:6.1875in;max-height:none;box-shadow:none;border-radius:0;page-break-after:always}.controls,.notes-panel{display:none!important}}
+</style>
+</head>
+<body>
+<div class="deck">
+
+<section class="slide active dark" data-note="Open with confidence. Do not mention that this was built from their email. This is a conversation guide, not a finished answer.\n\nScript:\nThank you for making the time today. I wanted to use this as a practical discussion around how FCI would approach the workplace strategy and space planning effort for X-energy’s headquarters environment. Rather than jump straight into a proposal, I want to frame the problem, show the structure we would use, and then use the conversation to understand what matters most to your leadership team.">
+  <div class="header"><div class="brand-pair"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg" alt="FCI Advisory logo"></div><span class="partner-mark">×</span><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png" alt="X-energy logo"></div></div></div>
+  <div class="slide-inner centered">
+    <div class="eyebrow">Executive discussion</div>
+    <h1>Workplace Strategy & Space Planning Approach</h1>
+    <p class="lead">Aligning people, teams, space, and growth so the headquarters environment supports how X-energy works.</p>
+    <div class="bigline"></div>
+    <p class="muted">Prepared by FCI Advisory</p>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="Use this as the credibility slide. Keep it concise. Do not oversell.\n\nScript:\nBefore we get into the approach, I’ll briefly frame who FCI is. FCI Advisory supports organizations through operational planning, governance, transformation, and implementation support. For this effort, the value we bring is not only space planning language. It is helping connect the workplace decision to how teams operate, how leaders make decisions, and how the organization scales over time.">
+  <div class="accent"></div>
+  <div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg" alt="FCI Advisory logo"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png" alt="X-energy logo"></div></div>
+  <div class="slide-inner compact">
+    <div class="eyebrow">About FCI Advisory</div>
+    <h2>Strategic advisory support for growth, operations, and transformation.</h2>
+    <div class="fci-intro">
+      <div class="intro-block">
+        <h3>Who we are</h3>
+        <p class="card-text" style="font-size:18px;line-height:1.42;color:#475467;margin:0">FCI helps organizations turn complex operational challenges into practical plans, governance models, and implementation-ready decisions.</p>
+        <div class="cap-grid">
+          <div class="cap"><b>Organizational strategy</b><span>Align leadership priorities, roles, workflows, and future-state needs.</span></div>
+          <div class="cap"><b>Operational planning</b><span>Translate how work gets done into clear planning logic.</span></div>
+          <div class="cap"><b>Governance design</b><span>Create rules and decision criteria that scale with the organization.</span></div>
+          <div class="cap"><b>Change adoption</b><span>Support communications, rollout, and stakeholder alignment.</span></div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <h3>How that applies here</h3>
+        <div class="mini"><strong>Make space decisions defensible</strong><p>Move from subjective seating decisions to criteria-based allocation.</p></div>
+        <div class="mini"><strong>Support cross-functional work</strong><p>Identify which teams need proximity, privacy, shared resources, or leadership access.</p></div>
+        <div class="mini"><strong>Plan for growth</strong><p>Build a model that can absorb hiring, restructuring, and future expansion without constant rework.</p></div>
+        <div class="cred-strip"><b>FCI’s role:</b> structure the process, pressure-test assumptions, and help leadership reach a practical decision path.</div>
+      </div>
+    </div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="This is the anchor slide. Walk through it slowly.\n\nScript:\nFCI would structure this in four work phases. First, discovery: interviews, document review, and understanding how the organization functions. Second, analysis: mapping adjacencies, utilization, growth assumptions, and constraints. Third, design: translating that logic into space concepts, seating rules, and policy recommendations. Fourth, implementation support: helping leadership communicate the changes and manage adoption. The value is in having a disciplined path from inputs to decisions.">
+  <div class="accent"></div>
+  <div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg" alt="FCI Advisory logo"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png" alt="X-energy logo"></div></div>
+  <div class="slide-inner compact">
+    <div class="eyebrow">Our approach</div>
+    <h2 class="phase-title">Four phases from discovery to adoption.</h2>
+    <p class="phase-sub">A structured, collaborative approach that aligns people, space, operations, and policy to support X-energy’s growth and long-term success.</p>
+    <div class="phase-cards">
+      <div class="phase"><div class="phase-icon"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="M15 15l6 6"></path><path d="M8 10h4M10 8v4"></path></svg></div><span class="num">1</span><h3>Discover</h3><div class="phase-line"></div><p>Confirm goals, engage stakeholders, and understand work patterns, constraints, and growth assumptions.</p></div>
+      <div class="phase"><div class="phase-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9h4v10H4zM10 19V5h4v14h-4zM16 19v-7h4v7h-4z"></path><circle cx="17" cy="7" r="3"></circle><path d="M19.5 9.5L22 12"></path></svg></div><span class="num">2</span><h3>Analyze</h3><div class="phase-line"></div><p>Evaluate adjacency, utilization, collaboration needs, privacy requirements, and capacity scenarios.</p></div>
+      <div class="phase"><div class="phase-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 10h16M10 4v16"></path><path d="M14 16l5-5M16 11h3v3"></path></svg></div><span class="num">3</span><h3>Design</h3><div class="phase-line"></div><p>Develop planning logic, seating rules, office criteria, and policy recommendations that support the future state.</p></div>
+      <div class="phase"><div class="phase-icon"><svg viewBox="0 0 24 24"><path d="M8 6h8M7 6a2 2 0 0 0-2 2v11h14V8a2 2 0 0 0-2-2"></path><path d="M9 13l2 2 4-5"></path></svg></div><span class="num">4</span><h3>Implement</h3><div class="phase-line"></div><p>Support leadership review, communications, change management, and rollout for successful adoption.</p></div>
+    </div>
+    <div class="outcome"><div class="target">◎</div><p><b>Outcome:</b> A workplace strategy that drives collaboration, supports growth, and adapts to the future.</p></div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="Set the meeting up as a collaborative strategy session.\n\nScript:\nMy goal today is not to over-present. It is to make sure we understand the project need correctly and show how FCI would organize the work. We see this as a structured planning effort that connects workplace decisions to the way the organization actually operates. If we align early on the goals, decision points, and leadership expectations, the final outputs become much more useful and much easier to implement.">
+  <div class="accent"></div><div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png"></div></div>
+  <div class="slide-inner">
+    <div class="eyebrow">Purpose of today</div><h2>Use the conversation to align on the real project need.</h2>
+    <div class="three" style="margin-top:34px">
+      <div class="card"><strong>Clarify priorities</strong><p>What leadership needs the headquarters environment to enable.</p></div>
+      <div class="card"><strong>Frame the work</strong><p>How FCI would move from discovery to decisions to implementation.</p></div>
+      <div class="card"><strong>Identify next steps</strong><p>What information, stakeholders, and milestones should shape the approach.</p></div>
+    </div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="This is the strategic pivot. Keep it simple and direct.\n\nScript:\nThe way we would frame this is that the headquarters planning effort is not just a facilities exercise. The space needs to support the operating model of the company. For a technical and fast-moving organization, that means understanding how leadership, engineering, program management, corporate services, IT, security, and facilities interact. Once that operating logic is clear, space decisions become more objective and easier to defend.">
+  <div class="accent"></div><div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png"></div></div>
+  <div class="slide-inner two">
+    <div><div class="eyebrow">Framing the challenge</div><h2>This is not just a seating exercise.</h2><p class="lead">It is an operating model question expressed through physical space.</p></div>
+    <div class="statement"><p>Good space planning helps leaders make clear decisions about proximity, privacy, collaboration, growth, and fairness.</p></div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="Show you understand what leaders care about.\n\nScript:\nWhen we look at success, we would not define it only as a completed seating chart. A successful outcome should give leadership a practical way to make space decisions over time. It should improve day-to-day collaboration, provide clear rules around offices and workstation types, preserve capacity for growth, and reduce the amount of one-off negotiation that can happen when a company is scaling quickly.">
+  <div class="accent"></div><div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png"></div></div>
+  <div class="slide-inner">
+    <div class="eyebrow">Desired outcome</div><h2>A practical workplace model leadership can use beyond the initial move.</h2>
+    <div class="four" style="margin-top:34px">
+      <div class="card"><strong>Operational alignment</strong><p>Teams are placed based on how work actually gets done.</p></div>
+      <div class="card"><strong>Clear governance</strong><p>Office and workstation decisions are based on consistent criteria.</p></div>
+      <div class="card"><strong>Growth capacity</strong><p>The model can absorb hiring, restructuring, and expansion.</p></div>
+      <div class="card"><strong>Employee clarity</strong><p>People understand the why behind assignments and changes.</p></div>
+    </div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="This slide shows professionalism without overcomplicating it.\n\nScript:\nThe discovery process is where the quality of the final recommendation is determined. We would want to speak with the right cross-section of leaders and support teams, not to create a long academic study, but to quickly identify what matters. Who collaborates frequently? Which teams need quiet focus? Where are there privacy or security considerations? What growth assumptions should we plan around? Those inputs become the basis for the planning logic.">
+  <div class="accent"></div><div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png"></div></div>
+  <div class="slide-inner two">
+    <div><div class="eyebrow">Discovery inputs</div><h2>Start with how the organization works.</h2><p class="lead">Interviews and data review should reveal the operating logic behind the space plan.</p></div>
+    <div class="pill-list">
+      <div class="pill"><span></span>Leadership priorities and decision criteria</div>
+      <div class="pill"><span></span>Team workflows and collaboration frequency</div>
+      <div class="pill"><span></span>Privacy, security, and visitor considerations</div>
+      <div class="pill"><span></span>Headcount, hiring plans, and future-state scenarios</div>
+    </div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="This should be a strong consulting slide.\n\nScript:\nOnce discovery is complete, we translate what we learn into a practical space strategy. The point is to create a clear logic for what belongs near what. Some teams need close proximity because they interact daily. Others need privacy, controlled access, or quiet focus space. Some groups may benefit from being near shared resources or leadership. The output is a plan that is explainable, not arbitrary.">
+  <div class="accent"></div><div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png"></div></div>
+  <div class="slide-inner two">
+    <div><div class="eyebrow">From operations to space</div><h2>Translate work patterns into adjacency logic.</h2><p class="lead">The space plan should reduce friction between the teams that need to work together most.</p></div>
+    <div class="workflow-map">
+      <svg class="workflow-lines" viewBox="0 0 560 392" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M280 78 L280 184" />
+        <path d="M174 138 C218 154 247 171 280 184" />
+        <path d="M386 140 C342 156 313 172 280 184" />
+        <path d="M188 292 C228 258 252 232 280 216" />
+        <path d="M378 292 C338 258 312 232 280 216" />
+        <circle cx="280" cy="184" r="4" />
+      </svg>
+      <div class="wf-node center"><span class="wf-icon">↔</span>Core Workflows</div>
+      <div class="wf-node a"><span class="wf-icon">⚙</span>Engineering</div>
+      <div class="wf-node b"><span class="wf-icon">▦</span>Programs</div>
+      <div class="wf-node c"><span class="wf-icon">◈</span>Corporate Services</div>
+      <div class="wf-node d"><span class="wf-icon">🔒</span>IT / Security</div>
+      <div class="wf-node e"><span class="wf-icon">★</span>Leadership</div>
+    </div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="Connect to deliverables without sounding like a checklist.\n\nScript:\nThe policy component is important because it makes the plan sustainable. Without a clear governance model, space decisions tend to become personality-driven or reactive. We would help define the criteria for office eligibility, workstation types, seat changes, onboarding, hybrid or attendance implications, and escalation. That gives leadership a consistent framework to use after the initial move is complete.">
+  <div class="accent"></div><div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png"></div></div>
+  <div class="slide-inner">
+    <div class="eyebrow">Governance framework</div><h2>Create rules that make future space decisions easier.</h2>
+    <div class="three" style="margin-top:34px">
+      <div class="card"><strong>Office eligibility</strong><p>Who receives enclosed offices and why.</p></div>
+      <div class="card"><strong>Workstation standards</strong><p>How workstation types are assigned across roles and teams.</p></div>
+      <div class="card"><strong>Change process</strong><p>How moves, new hires, reorganizations, and exceptions are handled.</p></div>
+    </div>
+    <p class="footer-note">The goal is consistency, transparency, and adaptability.</p>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide" data-note="Give confidence in a schedule without overcommitting.\n\nScript:\nAt a high level, we would organize the effort around a few major workstreams. First we align on goals and inputs. Then we conduct discovery and stakeholder interviews. Then we analyze the operational and space implications. After that, we develop the planning recommendations and the supporting policies. Finally, we help prepare leadership materials and implementation guidance. The exact schedule can be calibrated to your internal review milestones.">
+  <div class="accent"></div><div class="header"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg"></div><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png"></div></div>
+  <div class="slide-inner">
+    <div class="eyebrow">Workplan view</div><h2>A focused path from alignment to leadership-ready recommendations.</h2>
+    <div class="timeline">
+      <div class="mile"><div class="label">Step 1</div><strong>Align</strong><p>Goals, stakeholders, inputs, and review cadence.</p></div>
+      <div class="mile"><div class="label">Step 2</div><strong>Discover</strong><p>Interviews, data review, and operating model findings.</p></div>
+      <div class="mile"><div class="label">Step 3</div><strong>Analyze</strong><p>Adjacency, capacity, constraints, and growth scenarios.</p></div>
+      <div class="mile"><div class="label">Step 4</div><strong>Develop</strong><p>Planning recommendations and policy framework.</p></div>
+      <div class="mile"><div class="label">Step 5</div><strong>Support</strong><p>Leadership presentation, rollout guidance, and communications.</p></div>
+    </div>
+  </div><div class="slide-num"></div>
+</section>
+
+<section class="slide dark" data-note="Close by turning the meeting into discovery. Ask thoughtful questions.\n\nScript:\nTo make this useful, I would suggest we focus the rest of the conversation on a few decision areas. First, what does leadership most want the headquarters environment to accomplish? Second, where are the most important operational dependencies between teams? Third, what space decisions have historically been difficult or sensitive? Fourth, what timeline or review milestones do we need to support? From there, FCI can shape a focused approach and proposal around your actual needs.">
+  <div class="header"><div class="brand-pair"><div class="logo-card"><img src="https://fciadvisory.com/wp-content/themes/fciadvisory/public/build/assets/logo-Dxf1nByP.svg" alt="FCI Advisory logo"></div><span class="partner-mark">×</span><div class="logo-card x"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_x-energy-black.png/500px-Logo_x-energy-black.png" alt="X-energy logo"></div></div></div>
+  <div class="slide-inner">
+    <div class="eyebrow">Discussion</div><h2>Questions to guide the next conversation.</h2>
+    <div class="questions">
+      <div class="q">What does leadership need the headquarters environment to accomplish?</div>
+      <div class="q">Which teams have the highest operational dependencies?</div>
+      <div class="q">Where do space decisions become sensitive or difficult today?</div>
+      <div class="q">What milestones should the planning effort support?</div>
+    </div>
+  </div><div class="slide-num"></div>
+</section>
+
+</div>
+<div class="controls"><button onclick="prev()">←</button><button id="counter">1 / 11</button><button onclick="next()">→</button></div>
+<div class="notes-panel" id="notes"><button class="hide-notes" onclick="toggleNotes()">×</button><h3>Private speaker script</h3><pre id="notesText"></pre></div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let idx=0;const counter=document.getElementById('counter');const notes=document.getElementById('notes');const notesText=document.getElementById('notesText');
+function pad(n){return String(n).padStart(2,'0')}
+function refreshNums(){slides.forEach((s,n)=>{const el=s.querySelector('.slide-num');if(el)el.textContent=pad(n+1)+' / '+pad(slides.length)})}
+function show(i){idx=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===idx));counter.textContent=(idx+1)+' / '+slides.length;notesText.textContent=slides[idx].dataset.note||''}
+function next(){show(idx+1)}function prev(){show(idx-1)}function toggleNotes(){notes.classList.toggle('show');notesText.textContent=slides[idx].dataset.note||''}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')next();if(e.key==='ArrowLeft')prev();});refreshNums();show(0);
+</script>
+</body>
+</html>
