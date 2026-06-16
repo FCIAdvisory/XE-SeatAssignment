@@ -14,7 +14,7 @@
 .deck{height:100%;display:grid;place-items:center;padding:0;position:relative;overflow:hidden}
 .slide{display:none;width:var(--w);height:var(--h);background:#fff;border-radius:22px;box-shadow:0 26px 90px rgba(0,0,0,.42);position:relative;overflow:hidden;transform:scale(var(--s));transform-origin:center center}.slide.active{display:block}
 .slide-inner{height:100%;padding:124px 76px 58px;position:relative;z-index:2}.slide-inner.compact{padding-top:112px}.slide-inner.centered{display:flex;flex-direction:column;justify-content:center;padding-top:112px}
-.flow{display:flex;flex-direction:column;justify-content:space-between;gap:14px}.flow .grow{min-height:0}
+.flow{display:flex;flex-direction:column;gap:16px}.flow>*{flex-shrink:0}.flow .grow{flex-grow:1;align-content:center}
 .dark{background:radial-gradient(circle at 76% 10%,rgba(194,55,100,.34),transparent 33%),linear-gradient(135deg,#07070B 0%,#11172C 54%,#1E2671 100%);color:#fff}.dark:after{content:"";position:absolute;inset:0;background-image:linear-gradient(135deg,rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(45deg,rgba(194,55,100,.12),transparent 42%);background-size:72px 72px,100% 100%;opacity:.55;z-index:0}
 .header{position:absolute;left:64px;right:64px;top:40px;height:44px;display:flex;align-items:center;justify-content:space-between;z-index:5}.logo-card{height:44px;min-width:150px;background:#fff;border:1px solid rgba(16,24,40,.08);border-radius:10px;padding:9px 14px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,24,40,.04)}.logo-card svg{display:block;height:26px;width:auto}.dark .logo-card{border-color:rgba(255,255,255,.14);box-shadow:0 8px 24px rgba(0,0,0,.18)}
 .hlabel{font-size:12px;font-weight:850;letter-spacing:.18em;text-transform:uppercase;color:#98A2B3}.dark .hlabel{color:rgba(255,255,255,.6)}
@@ -32,6 +32,7 @@ h1{font-size:56px;line-height:1.02;margin:0 0 20px;letter-spacing:-2.2px;max-wid
 .cico{width:42px;height:42px;border-radius:11px;background:var(--grad);display:flex;align-items:center;justify-content:center;margin-bottom:12px}.cico svg{width:23px;height:23px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 /* takeaway band */
 .takeaway{display:flex;align-items:center;gap:15px;margin-top:22px;background:linear-gradient(100deg,rgba(30,38,113,.05),rgba(194,55,100,.07));border:1px solid var(--line);border-left:4px solid var(--maroon);border-radius:14px;padding:15px 20px}.takeaway .tk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:flex;align-items:center;justify-content:center;flex:0 0 auto}.takeaway .tk svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.takeaway p{font-size:16px;color:#344054;font-weight:600;margin:0;line-height:1.4}.takeaway b{color:var(--blue);font-weight:800}
+.dgrid .card{padding:15px 18px 14px}.dgrid .cico{width:36px;height:36px;margin-bottom:9px}.dgrid .cico svg{width:20px;height:20px}.dgrid .card strong{font-size:16px;margin-bottom:6px}.dgrid .card p{font-size:14px;line-height:1.42}
 /* arc */
 .artframe{background:#fff;border-radius:20px;padding:16px;box-shadow:0 24px 60px rgba(0,0,0,.34)}.artcap{font-size:12px;color:#98A2B3;text-align:center;margin-top:8px;font-weight:700;letter-spacing:.03em}
 .arc{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.astep{border:1px solid var(--line);border-top:3px solid var(--maroon);border-radius:14px;padding:15px 13px 16px;background:#fff;box-shadow:0 8px 20px rgba(22,36,63,.05)}.astep .an{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--grad);color:#fff;font-size:13px;font-weight:850;margin-bottom:10px}.astep .at{font-size:13.5px;font-weight:800;color:var(--blue);line-height:1.25;display:block}
@@ -274,13 +275,13 @@ h1{font-size:56px;line-height:1.02;margin:0 0 20px;letter-spacing:-2.2px;max-wid
   <div class="slide-inner compact flow">
     <div>
       <div class="eyebrow">Deliverables</div><h2>A complete plan — and the tools to keep it current.</h2>
-      <p class="sub">The same complete set of work product every time — tailored to your organization, not a one-off floor plan that expires after the move.</p>
+      <p class="sub">The same complete set of work product every time — tailored to your organization.</p>
     </div>
-    <div class="three grow" style="align-items:stretch;gap:16px">
-      <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 4.8L8.5 15.5l2.2-4.8z"/></svg></div><strong>Workplace strategy</strong><p>A recommended way of working, with options scored against criteria and the trade-offs made explicit.</p></div>
+    <div class="three grow dgrid" style="align-items:stretch;gap:14px">
+      <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 4.8L8.5 15.5l2.2-4.8z"/></svg></div><strong>Workplace strategy</strong><p>A recommended way of working, with scored options and explicit trade-offs.</p></div>
       <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div><strong>Plans &amp; detailed seating</strong><p>Floor-by-floor allocation and seating that reflect how teams actually collaborate.</p></div>
       <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 8h14M5 8l-2.5 5h5zM19 8l-2.5 5h5z"/></svg></div><strong>Policy &amp; eligibility framework</strong><p>The Seat-Fit Index and clear rules for offices, workstations, and work arrangements.</p></div>
-      <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><path d="M4 21h16M5 21V9l7-4 7 4v12M9 21v-5h6v5"/></svg></div><strong>Governance you operate</strong><p>Roles, decision authority, and standards so future changes stay consistent — run by your team.</p></div>
+      <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><path d="M4 21h16M5 21V9l7-4 7 4v12M9 21v-5h6v5"/></svg></div><strong>Governance you operate</strong><p>Roles, decision authority, and standards so future changes stay consistent.</p></div>
       <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M16 8a4 4 0 0 1 0 8"/></svg></div><strong>Change &amp; communications</strong><p>Audience-mapped templates and guidance that make the change land with employees.</p></div>
       <div class="card tt"><div class="cico"><svg viewBox="0 0 24 24"><path d="M4 9h11M12 6l3 3-3 3M20 15H9M12 12l-3 3 3 3"/></svg></div><strong>Vendor-ready handoff</strong><p>Clean relocation inputs your furniture, IT, and move partners execute without rework.</p></div>
     </div>
